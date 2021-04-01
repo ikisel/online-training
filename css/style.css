@@ -1,0 +1,244 @@
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+    color: #2b3541;
+    background-color: #FEFCFE;
+}
+
+.wrapper {
+    max-width: 1817px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid red;
+}
+
+/* Стили для nav */
+
+.wide-container {
+    margin: 0 auto;
+    width: 1817px;
+    border: 1px solid red;
+}
+
+.page-header .wide-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 20px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid violet;
+}
+
+.nav .nav-item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 5px 27px;
+    border: 1px solid green;
+}
+
+.nav .nav-item .nav-link {
+    text-decoration: none;
+}
+
+.nav .nav-item .nav-link:hover {
+    border-bottom: 1px solid #2b3541;
+    padding-bottom: 15px;
+    transition: 0.2s color ease;
+}
+
+.nav-social {
+    background-color: #FEFCFE;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    width: 50%;
+    height: 30px;
+    border: 1px solid brown;
+}
+
+.nav-social:hover {
+    transition: 0.2s color ease;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+/* Стили для section promo */
+
+.promo {
+    margin: 0 0 0 339px;
+    width: 1325px;
+    height: 852px;
+    padding-bottom: 145px;
+    border: 1px solid red;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 243px;
+}
+
+.promo-description {
+    font-size: 40px;
+    line-height: 125%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.promo-clarification {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.btn {
+    background: #FBF138;
+    color: #2B3541;
+    padding: 20px 30px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 5em;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.btn:hover {
+    background: #2B3541;
+    color: #FBF138;
+    transition: 0.2s color ease;
+}
+
+.btn-flat {
+    border: 1px transparent;
+}
+
+.promo {
+    background: url(../files/@1x/Image\ 1\ screen.png) top right/996px 852px no-repeat;
+}
+
+.arrow {
+    padding-top: 133px;
+    padding-bottom: 0;
+    margin-left: 76px;
+}
+
+/* Стили для section-events */
+
+.wrapper-standart {
+    margin: 0 auto;
+    max-width: 1143px;
+    border: 1px solid red;
+}
+
+.events {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 145px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section-heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.data {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 700;
+    opacity: 0.6;
+    padding-left: 23px;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+.events-description {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 125%;
+    padding-left: 23px;
+}
+
+.marathon {
+    background: url(../files/@1x/maraphon.png) top right/367px 600px no-repeat;
+    border: 1px solid red;
+}
+
+.trainer {
+    background: url(../files/@1x/Vebinar\ 1.png) top right/367px 600px no-repeat;
+    border: 1px solid red;
+}
+
+.yoga {
+    background: url(../files/@1x/Vebinar\ 2.png) top right/367px 600px no-repeat;
+    border: 1px solid red;
+}
+
+.btn-min {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 355px;
+    margin-left: 201px;
+}
+
+/* Стили для timetable-training */
+
+.timetable-training {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timetable-data {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #010101;
+    opacity: 0.7;
+}
+
+.timetable-heading {
+    font-weight: 700;
+}
+
+.training {
+    border: 1px solid #2B3541;
+}
+
+.timetable-image {}
