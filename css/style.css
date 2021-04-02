@@ -270,6 +270,30 @@ body {
     padding: 20px 30px;
 }
 
+.item-a {
+    grid-area: a;
+}
+
+.item-b {
+    grid-area: b;
+}
+
+.item-c {
+    grid-area: c;
+}
+
+.item-d {
+    grid-area: d;
+}
+
+.item-e {
+    grid-area: e;
+}
+
+.item-f {
+    grid-area: f;
+}
+
 .training:hover {
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
     opacity: 0.7;
@@ -288,6 +312,7 @@ body {
 .timetable {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
+    grid-template-areas: "a b c""d b e""d f e";
     gap: 15px;
     margin: 0;
     padding: 20px 0;
