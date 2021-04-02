@@ -58,7 +58,6 @@ body {
     font-weight: 400;
     line-height: 150%;
     padding: 5px 27px;
-    border: 1px solid green;
 }
 
 .nav .nav-item .nav-link {
@@ -79,7 +78,6 @@ body {
     padding: 5px 15px;
     width: 50%;
     height: 30px;
-    border: 1px solid brown;
 }
 
 .nav-social:hover {
@@ -408,4 +406,111 @@ form input:focus {
 .advanteges-item:nth-child(4) {
     align-self: flex-end;
     padding-right: 5px;
+}
+
+/* стили для footer */
+
+.footer {
+    background: #F3F3F3;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 455px;
+}
+
+.footer-aside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle-footer {
+    height: 42px;
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 24px);
+
+}
+
+.footer-aside-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2B3541;
+
+}
+
+.aside-link {
+    padding-top: 20px;
+    padding-right: 150px;
+
+}
+
+.footer-aside-link:hover {
+    transition: 0.2s color ease;
+    border-bottom: 1px solid #2B3541;
+}
+
+.aside-social {
+    border: none;
+    padding: 15px 15px;
+    width: 50%;
+    height: 30px;
+}
+
+.aside-social:hover {
+    transition: 0.2s color ease;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.footer-left {
+    list-style-type: none;
+}
+
+.left-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #2B3541;
+
+}
+
+.footer-left-item {
+    padding: 5px 27px;
+}
+
+.left-link:hover {
+    border-bottom: 1px solid #2b3541;
+    padding-bottom: 10px;
+    transition: 0.2s color ease;
+}
+
+.footer-bottom {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link {
+    text-decoration: none;
+
+}
+
+.footer-link:hover {
+    border-bottom: 1px solid #2B3541;
+    transition: 0.2s color ease;
 }
