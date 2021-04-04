@@ -377,18 +377,36 @@ form input:focus {
     outline: none;
 }
 
-.mailing-description {
+.mailing-description,
+.mailing-personal {
     font-weight: 400;
     font-size: 11px;
     line-height: 150%;
     opacity: 0.5;
     color: #2B3541;
-    padding-left: 5px;
+}
+
+.mailing-personal,
+.mailing-description {
+    display: block;
+    margin: 0;
+    flex-basis: 8%;
+}
+
+.mailing-personal>a {
+    text-decoration: none;
+}
+
+.mailing-personal>a:hover {
+    border-bottom: 1px solid #2B3541;
+    transition: 0.2s color ease;
+    padding-bottom: 5px;
 }
 
 .check-box {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* стили для section-about */
