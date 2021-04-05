@@ -11,8 +11,8 @@ body {
 .wrapper {
     max-width: 1817px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
     border: 1px solid red;
 }
 
@@ -133,6 +133,7 @@ body {
 
 .btn {
     background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     color: #2B3541;
     padding: 20px 30px;
     margin-top: 2em;
@@ -143,7 +144,7 @@ body {
     line-height: 150%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    border: 1px transparent;
 }
 
 .btn:focus {
@@ -152,13 +153,11 @@ body {
 
 .btn:hover {
     background: #2B3541;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
     color: #FBF138;
     transition: 0.2s color ease;
     cursor: pointer;
-}
-
-.btn-flat {
-    border: 1px transparent;
 }
 
 .promo {
@@ -192,7 +191,7 @@ body {
     font-weight: 700;
     line-height: 125%;
     padding: 20px 0;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 .data {
@@ -200,50 +199,140 @@ body {
     line-height: 150%;
     font-weight: 700;
     opacity: 0.6;
-    padding-left: 23px;
+    margin: 0;
+    /* padding-left: 23px;
     padding-top: 25px;
-    margin: 0 auto;
+    margin: 0 auto; */
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 3;
 }
 
 .events-description {
     font-size: 28px;
     font-weight: 700;
     line-height: 125%;
-    padding-left: 23px;
-    padding-top: 25px;
+    margin: 0;
+    position: absolute;
+    top: 77px;
+    left: 30px;
+    /* padding-left: 23px;
+    padding-top: 25px; */
+    z-index: 3;
 }
 
 .marathon {
-    background: url(../files/@1x/maraphon.png) top right/367px 600px no-repeat;
-    border: 1px solid red;
+    width: 367px;
+    height: 600px;
+    position: relative;
+    background-color: #FBF138;
+    background-position: top right;
+    background-image: url(../files/@1x/maraphon.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    /* background-size: 367px 600px; */
+    /* background: url(../files/@1x/maraphon.png) top right/367px 600px no-repeat; */
 }
 
-.marathon:hover {
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
-    opacity: 0.7;
+.marathon:hover,
+.trainer:hover,
+.yoga:hover {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* z-index: 2; */
+    opacity: 0.6;
     transition: 0.2s color ease;
     cursor: pointer;
 }
 
+.marathon:hover>.btn-events,
+.trainer:hover>.btn-events,
+.yoga:hover>.btn-events {
+    display: none;
+}
+
+.marathon:hover>.btn-flat,
+.trainer:hover>.btn-flat,
+.yoga:hover>.btn-flat {
+    display: block;
+}
+
 .trainer {
-    background: url(../files/@1x/Vebinar\ 1.png) top right/367px 600px no-repeat;
-    border: 1px solid red;
+    width: 366px;
+    height: 600px;
+    position: relative;
+    background-color: #FBF138;
+    background-position: top center;
+    background: url(../files/@1x/Vebinar\ 1.png);
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .yoga {
-    background: url(../files/@1x/Vebinar\ 2.png) top right/367px 600px no-repeat;
-    border: 1px solid red;
+    width: 367px;
+    height: 600px;
+    position: relative;
+    background-color: #FBF138;
+    background-position: top left;
+    background: url(../files/@1x/Vebinar\ 2.png);
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
-.btn-min {
+.btn-events {
+    width: 126px;
+    height: 47px;
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-    margin-top: 355px;
-    margin-left: 201px;
-    margin-bottom: 0;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    color: #2B3541;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+    border: 1px transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
+
+/* .btn-events:focus {
+    outline: none;
+} */
+
+.btn-flat {
+    display: none;
+    width: 221px;
+    height: 64px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+    color: #FBF138;
+    position: absolute;
+    top: 185px;
+    left: 30px;
+    z-index: 3;
+}
+
+.btn-flat:hover {
+    transition: 0.2s color ease;
+    cursor: pointer;
+}
+
+/* .btn-events:hover {
+    background: #2B3541;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+    color: #FBF138;
+    transition: 0.2s color ease;
+    cursor: pointer;
+} */
 
 /* Стили для timetable-training */
 
@@ -369,7 +458,6 @@ body {
 input {
     padding: 19px;
     border: none;
-    margin-bottom: 10px;
     background-color: #ffffff;
 }
 
