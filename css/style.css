@@ -1,5 +1,5 @@
 body {
-    /* min-width: 1143px; */
+    min-width: 1143px;
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 18px;
     line-height: 150%;
@@ -8,13 +8,6 @@ body {
     background-color: #FEFCFE;
 }
 
-.wrapper {
-    max-width: 1817px;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-    border: 1px solid red;
-}
 
 .timetable-section,
 .mailing-section,
@@ -25,72 +18,85 @@ body {
 
 /* Стили для nav */
 
-.wide-container {
-    margin: 0 auto;
+/* .wide-container {
+    margin: 0;
+    padding: 0;
     width: 1817px;
     border: 1px solid red;
-}
+} */
 
-.page-header {
+.wide-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 42px;
-    padding-bottom: 20px;
-
+    margin: 0 auto;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    align-self: normal;
+    /* margin-right: 237px; */
 }
 
-.nav {
+.nav-header {
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
-    padding-right: 37em;
     align-items: center;
-    border: 1px solid violet;
+    margin: 0;
+    padding: 0;
+    /* margin-right: 923px; */
 }
 
 .nav-item {
     padding: 5px 27px;
 }
 
-.nav-link {
+.nav-header-link {
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-
+    color: #2B3541;
 }
 
-.nav-link:hover {
+.nav-header-link:hover {
+    color: #181F27;
     border-bottom: 1px solid #2b3541;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     transition: 0.2s color ease;
+
 }
 
 .nav-aside {
     display: flex;
-    justify-content: space-between;
-    padding-right: 5px;
+    justify-content: flex-end;
+
 }
 
 .nav-social {
     list-style-type: none;
     background-color: #FEFCFE;
     border: none;
-    padding: 10px;
+    padding: 15px;
     width: 50%;
     height: 30px;
+}
+
+.nav-social:last-child {
+    padding-right: 0;
 }
 
 .nav-social:hover {
     transition: 0.2s color ease;
     cursor: pointer;
     transform: scale(1.2);
+}
+
+.wrapper-standart {
+    margin: 0 auto;
+    width: 1143px;
+    border: 1px solid red;
 }
 
 
@@ -147,9 +153,10 @@ body {
     border: 1px transparent;
 }
 
-.btn:focus {
+
+/* .btn:focus {
     outline: none;
-}
+} */
 
 .btn:hover {
     background: #2B3541;
@@ -172,11 +179,7 @@ body {
 
 /* Стили для section-events */
 
-.wrapper-standart {
-    margin: 0 auto;
-    max-width: 1143px;
-    border: 1px solid red;
-}
+
 
 .events {
     padding-left: 0;
@@ -186,12 +189,11 @@ body {
 
 }
 
-.section-heading {
+.events-heading {
     font-size: 40px;
     font-weight: 700;
     line-height: 125%;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .data {
@@ -217,8 +219,6 @@ body {
     position: absolute;
     top: 77px;
     left: 30px;
-    /* padding-left: 23px;
-    padding-top: 25px; */
     z-index: 3;
 }
 
@@ -339,8 +339,23 @@ body {
 .timetable-training {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
+.timetable-section-data {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 125%;
+    margin-bottom: 40px;
+}
+
+.timetable-section-heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #2B3541;
+    margin-bottom: 40px;
+}
 
 .timetable-data {
     font-weight: 400;
@@ -429,9 +444,11 @@ body {
 }
 
 /* стили для section-mailing */
+.mailing-section {
+    background: #F3F3F3;
+}
 
 .mailing {
-    background: #F3F3F3;
     text-align: center;
     margin: 0;
     padding: 20px;
