@@ -10,7 +10,6 @@ body {
 
 
 .timetable-section,
-.mailing-section,
 .events-section,
 .about-section {
     padding-bottom: 145px;
@@ -144,7 +143,7 @@ body {
     padding: 20px 30px;
     margin-top: 2em;
     margin-bottom: 1em;
-    margin-left: 5em;
+    margin-left: 20px;
     font-size: 16px;
     font-weight: 700;
     line-height: 150%;
@@ -222,38 +221,57 @@ body {
     z-index: 3;
 }
 
+
+
 .marathon {
     width: 367px;
     height: 600px;
     position: relative;
-    background-color: #FBF138;
     background-position: top right;
+    background-color: #FBF138;
     background-image: url(../files/@1x/maraphon.png);
     background-repeat: no-repeat;
-    z-index: 1;
+    /* z-index: 1; */
     /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
     /* background-size: 367px 600px; */
     /* background: url(../files/@1x/maraphon.png) top right/367px 600px no-repeat; */
 }
 
-.marathon:hover,
+
+.marathon:hover {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    opacity: 0.6; */
+    transition: 0.2s color ease;
+    cursor: pointer;
+    /* position: relative;
+    z-index: 2; */
+}
+
+.marathon:hover>.btn-events {
+    display: none;
+}
+
+.marathon:hover>.btn-flat {
+    display: block;
+    /* position: absolute;
+    z-index: 3; */
+}
+
 .trainer:hover,
 .yoga:hover {
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    /* z-index: 2; */
     opacity: 0.6;
     transition: 0.2s color ease;
     cursor: pointer;
 }
 
-.marathon:hover>.btn-events,
 .trainer:hover>.btn-events,
 .yoga:hover>.btn-events {
     display: none;
 }
 
-.marathon:hover>.btn-flat,
 .trainer:hover>.btn-flat,
 .yoga:hover>.btn-flat {
     display: block;
@@ -262,23 +280,21 @@ body {
 .trainer {
     width: 366px;
     height: 600px;
-    position: relative;
     background-color: #FBF138;
     background-position: top center;
     background: url(../files/@1x/Vebinar\ 1.png);
     background-repeat: no-repeat;
-    z-index: 1;
+    position: relative;
 }
 
 .yoga {
     width: 367px;
     height: 600px;
-    position: relative;
     background-color: #FBF138;
     background-position: top left;
     background: url(../files/@1x/Vebinar\ 2.png);
     background-repeat: no-repeat;
-    z-index: 1;
+    position: relative;
 }
 
 .btn-events {
@@ -419,8 +435,6 @@ body {
     margin-bottom: 10px;
 }
 
-
-
 .timetable {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
@@ -451,7 +465,7 @@ body {
 .mailing {
     text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 80px;
     position: relative;
     z-index: 0;
 }
@@ -478,9 +492,9 @@ input {
     background-color: #ffffff;
 }
 
-form input:focus {
+/* form input:focus {
     outline: none;
-}
+} */
 
 .mailing-description,
 .mailing-personal {
@@ -491,12 +505,12 @@ form input:focus {
     color: #2B3541;
 }
 
-.mailing-personal,
+/* .mailing-personal,
 .mailing-description {
     display: block;
     margin: 0;
     flex-basis: 8%;
-}
+} */
 
 .mailing-personal>a {
     text-decoration: none;
@@ -508,13 +522,18 @@ form input:focus {
     padding-bottom: 5px;
 }
 
-.check-box {
+/* .check-box {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* стили для section-about */
+
+.about-section {
+    margin-top: 145px;
+
+}
 
 .about {
     display: flex;
@@ -580,7 +599,6 @@ form input:focus {
 .footer-left {
     display: flex;
     justify-content: flex-start;
-    padding-right: 26em;
 }
 
 .footer-aside {

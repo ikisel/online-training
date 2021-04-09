@@ -143,16 +143,14 @@
                     <div class="circle">
                         <img class="circle" src="./icons/yellow-circle.svg" alt="yellow-circle">
                     </div>
-                    <h2 class="section-heading">Подпишитесь на рассылку</h2>
-                    <form>
-                        <input type="text" placeholder="Ваш email">
-                        <input type="submit" class="btn btn-flat" value="Подписаться">
+                    <label for="user-field-id"><h2 class="section-heading">Подпишитесь на рассылку</h2></label>
+                    <form  action="#" method="GET">
+                        <input id="user-field-id" type="text" placeholder="Ваш email">
+                        <input type="submit" class="btn" value="Подписаться">
                     </form>
-                    <div class="check-box">
-                        <p><input type="checkbox" name="area" id="#" checked></p>
-                        <p class="mailing-description"> Согласен с обработкой </p>
-                        <p class="mailing-personal"><a href="#"> персональных данных</a></p>
-                    </div>
+                    <input id="consent-personal" type="checkbox" name="consent" checked>
+                        <label for="consent-personal"><span class="mailing-description">Согласен с обработкой</span><a class="mailing-personal" href="#">персональных данных</a> </label>
+                    
                 </div>
             </div>
         </section>
